@@ -20,7 +20,7 @@ class IntegerRange:
         if not isinstance(value, int):
             raise TypeError("Value type must be an integer.")
         if not self.min_amount <= value <= self.max_amount:
-            raise ValueError(f"Value must be in {self.max_amount}"
+            raise ValueError(f"Value must be in {self.min_amount}"
                              f" - {self.max_amount} range.")
         setattr(instance, self.protected_name, value)
 
